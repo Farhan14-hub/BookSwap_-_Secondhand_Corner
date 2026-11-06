@@ -1,0 +1,151 @@
+/* KESELURUHAN */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eaeaea;
+}
+
+/*BAGIAN NAVBAR beranda*/
+.navbar {
+    width: 100%;
+    height: 60px;
+    background-color: #9C4A07;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4%;
+}
+
+.logo img{
+    border-radius: 50%;
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
+    display: block;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 35px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 13px 18px;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.menu a:hover,
+.menu a.active {
+    background-color: rgba(255,255,255,0.25);
+}
+
+
+.profil-container {
+    width: 90%;
+    max-width: 600px;
+    margin: 70px auto;
+    padding: 35px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.profil-container h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.profil-container h2 {
+    color: #9C4A07;
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+
+.profil-container > p {
+    color: #555;
+    font-size: 16px;
+}
+
+.tombol-akun {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.btn-login,
+.btn-daftar {
+    padding: 12px 30px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 2px solid #9C4A07;
+}
+
+.btn-login {
+    background-color: #9C4A07;
+    color: white;
+}
+
+.btn-daftar {
+    background-color: white;
+    color: #9C4A07;
+}
+
+.profil-data {
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.profil-data p {
+    padding: 15px;
+    margin-bottom: 12px;
+    background-color: #f8f4ef;
+    border-radius: 8px;
+    border-left: 4px solid #9C4A07;
+    font-size: 15px;
+}
+
+.profil-data span {
+    font-weight: bold;
+    color: #9C4A07;
+}
+
+.btn-logout {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 7px;
+    background-color: #9C4A07;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-logout:hover {
+    background-color: #713500;
+}
+
+@media (max-width: 600px) {
+    .profil-container {
+        width: 92%;
+        margin: 35px auto;
+        padding: 20px;
+    }
+}

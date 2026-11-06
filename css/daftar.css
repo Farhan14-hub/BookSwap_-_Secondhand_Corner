@@ -1,0 +1,110 @@
+/* RESET CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BACKGROUND */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eaeaea;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* KOTAK LOGIN */
+.daftar-box {
+    width: 400px;
+    background-color: white;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+/* JUDUL */
+.katalog-daftar h2 {
+    text-align: center;
+    color: #9C4A07;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.katalog-daftar p {
+    text-align: center;
+    color: #777;
+    margin-bottom: 25px;
+}
+
+/* LABEL */
+.katalog-daftar label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+/* INPUT */
+.katalog-daftar input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    outline: none;
+}
+
+.katalog-daftar input:focus {
+    border-color: #9C4A07;
+}
+
+/* TOMBOL LOGIN */
+.katalog-daftar button {
+    width: 100%;
+    padding: 12px;
+    background-color: #9C4A07;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.katalog-daftar button:hover {
+    background-color: #753805;
+}
+
+/* DAFTAR */
+.daftar {
+    margin-top: 20px;
+}
+
+.daftar p {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.daftar a,
+.kembali a {
+    color: #9C4A07;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.daftar a:hover,
+.kembali a:hover {
+    text-decoration: underline;
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 450px) {
+    .login-box {
+        width: 90%;
+        padding: 25px;
+    }
+}

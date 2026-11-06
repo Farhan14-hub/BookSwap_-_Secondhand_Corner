@@ -1,0 +1,160 @@
+/* KESELURUHAN */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eaeaea;
+}
+
+/*BAGIAN NAVBAR beranda*/
+.navbar {
+    width: 100%;
+    height: 60px;
+    background-color: #9C4A07;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4%;
+}
+
+.logo img{
+    border-radius: 50%;
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
+    display: block;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 35px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 13px 18px;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.menu a:hover,
+.menu a.active {
+    background-color: rgba(255,255,255,0.25);
+}
+
+
+/* KATEGORI */
+.kategori, .rekomendasi {
+    padding: 45px 8%;
+    background-color: #eaeaea;
+}
+
+.kategori h2, .rekomendasi h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #000;
+} 
+
+.kategori-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.kategori-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+    text-align: center;
+
+}
+
+.kategori-card button{
+    background: #9C4A07;
+    color: #eaeaea;
+    border: none;
+    padding: 14px 25px;
+    border-radius: 8px;
+    margin-top: 20px;
+    cursor: pointer;
+    
+}
+
+.kategori-card h3 {
+    color: #9C4A07;
+}
+
+/* REKOMENDASI BUKU */
+.buku-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.buku-card {
+    background: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+}
+
+.buku-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+}
+
+.buku-card h3 {
+    margin: 15px 0;
+}
+
+.buku-card p {
+    color: #9C4A07;
+    font-weight: bold;
+}
+
+.buku-card button {
+    background: #9C4A07;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #9C4A07;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-image img {
+        width: 100%;
+    }
+
+    .kategori-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .buku-container {
+        grid-template-columns: 1fr;
+    }
+}
