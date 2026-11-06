@@ -45,78 +45,63 @@
 </section>
 
 <!-- KATEGORI -->
+
 <section class="kategori">
+
     <h2>Kategori Pilihan</h2>
 
     <div class="kategori-container">
+
         <div class="kategori-card">
             <h3>Sejarah</h3>
-            <p>Mengenal Lebih Jauh Mengenai Sejarah</p>
-            <button onclick="katalog_buku()">
-                Jelajahi    
+            <p>Mengenal lebih jauh mengenai sejarah.</p>
+
+            <button onclick="katalog_buku('Sejarah')">
+                Jelajahi
             </button>
         </div>
 
         <div class="kategori-card">
             <h3>Novel</h3>
-            <p>Temukan Berbagai Cerita Baru Yang Menarik</p>
-            <button onclick="katalog_buku()">
-                Jelajahi    
+            <p>Temukan berbagai cerita baru yang menarik.</p>
+
+            <button onclick="katalog_buku('Novel')">
+                Jelajahi
             </button>
         </div>
 
         <div class="kategori-card">
             <h3>Keilmuan</h3>
-            <p>Buku yang berbagi pengetahuan</p>
-            <button onclick="katalog_buku()">
-                Jelajahi    
+            <p>Buku yang berbagi pengetahuan.</p>
+
+            <button onclick="katalog_buku('Keilmuan')">
+                Jelajahi
             </button>
         </div>
 
         <div class="kategori-card">
             <h3>Bahasa</h3>
-            <p>Tambah wawasan dengan berbagai bacaan</p>
-            <button onclick="katalog_buku()">
-                Jelajahi    
+            <p>Tambah wawasan dengan berbagai bacaan.</p>
+
+            <button onclick="katalog_buku('Bahasa')">
+                Jelajahi
             </button>
         </div>
+
     </div>
+
 </section>
 
 <!-- REKOMENDASI -->
 <section class="rekomendasi" id="buku">
-    <h2>Rekomendasi Buku</h2>
 
-    <div class="buku-container">
-
-        <div class="buku-card">
-            <img src="./img/buku sejarah1.jpeg">
-            <h3>Buku Sejarah Indonesia Masa Kemerdekaan</h3>
-            <p>Rp95.000</p>
-            <button onclick="beliBuku('Belajar sejarah')">
-                Lihat Buku
-            </button>
-        </div>
-
-        <div class="buku-card">
-            <img src="./img/buku novel1.jpeg">
-            <h3>Buku novel Laut Bercerita</h3>
-            <p>Rp105.000</p>
-            <button onclick="beliBuku('novel')">
-                Lihat Buku
-            </button>
-        </div>
-
-        <div class="buku-card">
-            <img src="./img/keilmuan.jpeg">
-            <h3>Buku keilmuan mengenai Merfologi</h3>
-            <p>Rp80.000</p>
-            <button onclick="beliBuku('keilmuan')">
-                Lihat Buku
-            </button>
-        </div>
-
+    <h2 class="book-i">
+        Rekomendasi Buku
+    </h2>
+    <div class="buku-container" id="rekomendasiBuku">
+        <!-- Rekomendasi buku akan muncul otomatis di sini -->
     </div>
+
 </section>
 
     <script src="./js/script_beranda.js"></script>
