@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katalog Buku UKRI</title>
+    <link rel="stylesheet" href="./css/style_katalog.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="./img/images.jpg" alt="Logo UKRI">
+        </div>
+
+        <ul class="menu">
+            <li><a href="beranda.html">Beranda</a></li>
+            <li><a href="jual_barang.html">Jual Barang</a></li>
+            <li><a href="tukar_barang.html">Tukar Barang</a></li>
+            <li><a href="katalog_buku.html" class="active">Katalog Buku</a></li>
+            <li><a href="riwayat_transaksi.html">Riwayat Transaksi</a></li>
+            <li><a href="Profil.html">Profil</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- KATEGORI PILIHAN -->
+    <section class="kategori">
+
+        <h2>Kategori Pilihan</h2>
+
+        <div class="kategori-container">
+
+            <div class="kategori-card">
+                <h3>Sejarah</h3>
+                <p>Mengenal Lebih Jauh Mengenai Sejarah</p>
+                <button onclick="pilihKategori('Sejarah')">
+                    Jelajahi
+                </button>
+            </div>
+
+            <div class="kategori-card">
+                <h3>Novel</h3>
+                <p>Temukan Berbagai Cerita Baru Yang Menarik</p>
+                <button onclick="pilihKategori('Novel')">
+                    Jelajahi
+                </button>
+            </div>
+
+            <div class="kategori-card">
+                <h3>Keilmuan</h3>
+                <p>Buku yang berbagi pengetahuan</p>
+                <button onclick="pilihKategori('Keilmuan')">
+                    Jelajahi
+                </button>
+            </div>
+
+            <div class="kategori-card">
+                <h3>Bahasa</h3>
+                <p>Tambah wawasan dengan berbagai bacaan</p>
+                <button onclick="pilihKategori('Bahasa')">
+                    Jelajahi
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- SLOGAN -->
+<section class="slogan">
+    <h2>RAIH ILMU UNTUK BANGSA!</h2>
+</section>
+
+    <!-- DAFTAR BUKU -->
+    <section class="rekomendasi" id="bukuku">
+
+        <h2>Daftar Buku</h2>
+
+        <!-- PENCARIAN DAN FILTER -->
+        <div class="filter-container">
+
+            <div class="search-box">
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Cari judul buku atau penulis..."
+                >
+            </div>
+
+            <select id="filterKategori">
+                <option value="">Semua Kategori</option>
+                <option value="Sejarah">Sejarah</option>
+                <option value="Novel">Novel</option>
+                <option value="Keilmuan">Keilmuan</option>
+                <option value="Bahasa">Bahasa</option>
+            </select>
+
+            <select id="filterKondisi">
+                <option value="">Semua Kondisi</option>
+                <option value="Baru">Baru</option>
+                <option value="Bekas">Bekas</option>
+            </select>
+
+            <button class="btn-reset" onclick="resetFilter()">
+                Reset Filter
+            </button>
+
+        </div>
+
+
+        <!-- JUMLAH BUKU -->
+        <p id="jumlahBuku" class="jumlah-buku"></p>
+
+
+        <!-- PESAN KETIKA BUKU TIDAK DITEMUKAN -->
+        <p id="pesanKosong" class="pesan-kosong">
+            Buku tidak ditemukan.
+        </p>
+
+
+        <!-- TEMPAT MENAMPILKAN BUKU -->
+        <div class="buku-container" id="daftarBuku">
+
+        </div>
+
+    </section>
+
+
+    <script src="./js/script_katalog.js"></script>
+
+</body>
+</html>
