@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website UKRI</title>
+    <link rel="stylesheet" href="./css/style_riwayat_transaksi.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <img src="./img/images.jpg" alt="logo ukri" width="100px" height="100px">
+        </div>
+
+         <ul class="menu">
+            <li><a href="beranda.html">Beranda</a></li>
+            <li><a href="jual_barang.html">Jual Barang</a></li>
+            <li><a href="tukar_barang.html">Tukar Barang</a></li>
+            <li><a href="katalog_buku.html">Katalog Buku</a></li>
+            <li><a href="riwayat_transaksi.html" class="active">Riwayat Transaksi</a></li>
+            <li><a href="Profil.html">Profil</a></li>
+        </ul>
+    </nav>
+    
+    
+<section class="riwayat" id="riwayat">
+
+    <div class="riwayat__head">
+        <h2>Riwayat Transaksi</h2>
+        <p id="riwayat-ringkasan">0 transaksi</p>
+    </div>
+
+    <!-- RINGKASAN STATUS -->
+    <div class="riwayat__summary">
+
+        <div class="summary-card diterima">
+            <div>
+                <p>Diterima</p>
+                <h3 id="jumlah-diterima">0</h3>
+            </div>
+            <span>✓</span>
+        </div>
+
+        <div class="summary-card menunggu">
+            <div>
+                <p>Menunggu</p>
+                <h3 id="jumlah-menunggu">0</h3>
+            </div>
+            <span>◷</span>
+        </div>
+
+        <div class="summary-card dibatalkan">
+            <div>
+                <p>Dibatalkan</p>
+                <h3 id="jumlah-dibatalkan">0</h3>
+            </div>
+            <span>✕</span>
+        </div>
+
+    </div>
+
+    <!-- FILTER STATUS -->
+    <div class="riwayat__filter" id="riwayat-filter">
+
+        <button type="button"
+            class="aktif"
+            data-status="semua">
+            Semua
+        </button>
+
+        <button type="button" data-status="Berhasil">
+            Diterima
+        </button>
+
+        <button type="button" data-status="Menunggu">
+            Menunggu
+        </button>
+
+        <button type="button" data-status="Dibatalkan">
+            Dibatalkan
+        </button>
+
+    </div>
+
+    <!-- TABEL TRANSAKSI -->
+    <div class="tabel-container">
+
+        <table class="tabel-riwayat">
+
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Nama Buku</th>
+                    <th>Penulis</th>
+                    <th>Jumlah</th>
+                    <th>Tanggal</th>
+                    <th>Total Harga</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+
+            <tbody id="riwayat-list">
+                <!-- Data dari JavaScript -->
+            </tbody>
+
+        </table>
+
+        <div class="riwayat__kosong" id="riwayat-kosong" hidden>
+            <p>Belum ada transaksi.</p>
+            <span>Transaksi buku akan muncul di sini.</span>
+        </div>
+
+    </div>
+
+</section>
+
+    <script src="./js/script_riwayat_transaksi.js"></script>
+
+</body>
+</html>
